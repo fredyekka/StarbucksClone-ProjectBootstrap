@@ -12,7 +12,7 @@
 
 - 🪄Used Framework **🔹Bootstrap**
 
-- 📦Created Pages **👉Explore.html, 👉Order.html, 👉Checkout.html, 👉Contact-Us.html, 👉Feedback.**
+- 📦Created Pages **👉Explore.html, 👉Order.html, 👉Checkout.html, 👉Contact-Us, 👉Feedback.**
 
 - 🏃How to run the Web Page? **👉Best view the web page click to run live server on Visual Studio Code.
 - 📫 How to reach me [ekka_fredy@yahoo.com](ekka_fredy@yahoo.com)
