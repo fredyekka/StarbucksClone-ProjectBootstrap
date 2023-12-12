@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order</title>
+  <link href="path/to/bootstrap.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <style>
+    .so i {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background-color: green;
+      border-radius: 50%;
+      margin-right: 50px;
+      margin-left: 30px;
+      color: rgb(243, 243, 244);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: all 0.4s ease;
+    }
+
+    .so :hover {
+      margin-bottom: 20px;
+    }
+
+    .text {
+      justify-content: center;
+    }
+
+    .text-1 {
+      justify-content: center;
+    }
+
+    .img :hover {
+      transform: scale(1.1);
+
+    }
+  </style>
+
+  
+    <!-- Navbar content -->
+  </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="Img/Starbucks-logo-S.png" alt="Bootstrap" width="40" height="35">
+          </a>
+        </div>
+      </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gift.html">Gift</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Order.html">Older</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Checkout.html">Pay</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Store
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">India</a></li>
+              <li><a class="dropdown-item" href="#">World wide</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Launch new store in India</a></li>
+              <li><a class="dropdown-item" href="#">Launch new store world wide</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Looking for Something specific"
+            aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <!-- Button trigger modal -->
+      <div class="mx-2 py-3">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Contact Us
+        </button>
+      </div>
+      <!--Contact Us Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-2" id="exampleModalLabel">Contact Us</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container mt-2">
+                <form action="submit_feedback.php" method="post">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                      placeholder="name@example.com" name="email" required>
+                  </div>
+                  <label for="exampleFormControlSelect1">Select your Query</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Select</option>
+                    <option>Delivery Related</option>
+                    <option>Payment & Order Issues</option>
+                    <option>Franchise</option>
+                    <option>Others</option>
+                  </select>
+                  <div class="form-group">
+                    <label for="feedback">Your Concern</label>
+                    <textarea class="form-control" id="feedback" name="feedback" rows="4" required></textarea>
+                  </div>
+                  <br>
+                  <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Feedback
+      </button>
+      <!-- Feedback Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-4" id="staticBackdropLabel">Feedback</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="container mt-4">
+              <form action="submit_feedback.php" method="post">
+                <div class="form-group">
+                  <label for="name">Your Name:</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="feedback">How are you feeling about our brand?</label>
+                  <textarea class="form-control" id="feedback" name="feedback" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="feedback">Any further recommendations or feedback.</label>
+                  <textarea class="form-control" id="feedback" name="feedback" rows="4" required></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-success">Submit Feedback</button><br>
+              </form>
+            </div>
+  </nav>
+  <hr>
+  <!--Home-->
+  <div class="container my-1">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb p-2 bg-body-tertiary rounded-2">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Order</a></li>
+      </ol>
+    </nav>
+  </div>
+  <!--Tittle Bar-->
+  <nav class="nav bg-dark" aria-label="Secondary navigation">
+    <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+    <a class="nav-link" href="#">
+      Bestseller
+      <span class="badge text-bg-light rounded-pill align-text-bottom">6</span>
+    </a>
+    <a class="nav-link" href="#">
+      Foods
+      <span class="badge text-bg-light rounded-pill align-text-bottom">2</span>
+    </a>
+    <a class="nav-link" href="#">
+      Drinks
+      <span class="badge text-bg-light rounded-pill align-text-bottom">6</span>
+    </a>
+    <a class="nav-link" href="#">Upcoming</a>
+    <a class="nav-link" href="#"></a>
+  </nav>
+  <br>
+  <!-- START THE FEATURETTES -1 -->
+
+  <hr class="featurette-divider">
+  <div class="row featurette ps-md-5">
+    <div class="col-md-7 bg-dark">
+      <div class="text">
+        <h2 class="featurette-heading fw-normal lh-1 text-light py-4">Bestseller<span class="text-light"><br>It’ll blow
+            your mind.</span></h2>
+        <p class="lead text-light">Everyone's favorite Starbucks put together in a specially curated collection..</p>
+        <br><br>
+        <p class="lead text-light">History of Starbucks<br><br>The first Starbucks opened in Seattle, Washington, on
+          March 31, 1971, by three partners who met while they were students at the University of San Francisco:
+          English teacher Jerry Baldwin, history teacher Zev Siegl, and writer Gordon Bowker were inspired to sell
+          high-quality coffee beans and equipment by coffee roasting entrepreneur Alfred Peet after he taught them
+          his style of roasting beans.The company took the name of the chief mate in the book Moby-Dick: Starbuck,
+          after considering "Cargo House" and "Pequod".</p>
+      </div>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="Img/STT.jpg" class="img-fluid rounded mx-auto d-block" alt="">
+    </div>
+  </div>
+  </div>
+  <br>
+  <!--pricing-card-1-->
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="img">
+          <img src="Img/cap-.jpg" alt="" class="img-fluid rounded-5">
+          <h2 class="fw-normal">Cappuccino</h2>
+          <p>Dark, Rich in flavour espresso lies in wait under a smoothed...</p>
+          <button type="button" class="btn btn-success mt-4 float-start">₹ 283.50</button>
+          <p><a class="btn btn-secondary" href="#">Add Item »</a></p><br>
+        </div><!-- /.col-lg-4 -->
+      </div>
+      <div class="col-lg-4">
+        <div class="img">
+          <img src="Img/cap-1.jpg" alt=""class="img-fluid rounded-5">
+          <h2 class="fw-normal">Caffe Americano</h2>
+          <p>Rich in flavour, full-bodied espresso with hot water in true...</p>
+          <button type="button" class="btn btn-success mt-4 float-start">₹ 262.50</button>
+          <p><a class="btn btn-secondary" href="#">Add Item »</a></p><br>
+        </div><!-- /.col-lg-4 -->
+      </div>
+      <div class="col-lg-4">
+        <div class="img">
+          <img src="Img/cap-2.jpg" alt=""class="img-fluid rounded-5">
+          <h2 class="fw-normal">Caffe Latte</h2>
+          <p>Our dark, Rich in flavour espresso balanced with steamed mil...</p>
+          <button type="button" class="btn btn-success mt-4 float-start">₹ 288.75</button>
+          <p><a class="btn btn-secondary" href="#">Add Item »</a></p><br>
+
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <br>
+      <!--pricing-card-2-->
+      <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="img">
+              <img src="Img/cap-3.jpg" alt=""class="img-fluid rounded-5">
+              <h2 class="fw-normal">Caffè Mocha</h2>
+              <p>We combine our Rich in flavour, full-bodied espresso with bi...</p>
+              <button type="button" class="btn btn-success mt-4 float-start">₹ 330.75</button>
+              <p><a class="btn btn-secondary" href="#">Add Item »</a></p><br>
+            </div><!-- /.col-lg-4 -->
+          </div>
+          <div class="col-lg-4">
+            <div class="img">
+              <img src="Img/cap-4.jpg" alt=""class="img-fluid rounded-5">
+              <h2 class="fw-normal">White Chocolate Mocha</h2>
+              <p>Our signature espresso meets white chocolate sauce and steam...</p>
+              <button type="button" class="btn btn-success mt-4 float-start">₹ 330.75</button>
+              <p><a class="btn btn-secondary" href="#">Add Item »</a></p><br>
+            </div><!-- /.col-lg-4 -->
+          </div>
+          <div class="col-lg-4">
+            <div class="img">
+              <img src="Img/cap-5.jpg" alt=""class="img-fluid rounded-5">
+              <h2 class="fw-normal">Pumpkin spice latte</h2>
+              <p>Our dark, Rich in flavour espresso balanced with steamed mil...</p>
+              <button type="button" class="btn btn-success mt-4 float-start">₹ 414.75</button>
+              <p><a class="btn btn-secondary" href="#">Add Item »</a></p>
+            </div><!-- /.col-lg-4 -->
+          </div>
+        </div><!-- /.row -->
+        <br>
+        <div class="text-bg-success p-3">Food</div>
+        <br>
+        <!--Thumbnail-->
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary-emphasis">Food</strong>
+                <h3 class="mb-0">Sandwiches & Wraps</h3>
+                <div class="mb-1 text-body-secondary">Egg and Sausage Millet Wrap.</div>
+                <p class="card-text mb-auto">Smoked chicken sausages and scrambled egg encased in a whole...</p>
+                <a href="Checkout.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Buy Now
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="Img/San.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success-emphasis"> Dessert</strong>
+                <h3 class="mb-0">Cookies & Desserts</h3>
+                <div class="mb-1 text-body-secondary">Almond Butterscotch Cookie.</div>
+                <p class="mb-auto">A buttery cookie with a combination of crunchy almond and bu..</p>
+                <a href="Checkout.html" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Buy Now
+                  <svg class="bi">
+                    <use xlink:href="#chevron-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="Img/San-1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- START THE FEATURETTES -2 -->
+  <hr class="featurette-divider">
+  <div class="row featurette  ps-md-5">
+    <div class="col-md-7 bg-dark">
+      <div class="text-1">
+        <h2 class="featurette-heading fw-normal lh-1 text-light py-4">Drinks <span
+            class="text-body-light"><br>Espresso.</span></h2>
+        <p class="lead text-light">Our smooth signature Espresso Roast with rich flavor and caramelly sweetness is at
+          the very heart of everything we do..</p><br>
+        <p class="lead text-light">History of Starbucks<br><br>The Starbucks store at 1912 Pike Place. This is the
+          second location of the original Starbucks, which was at 2000 Western Avenue from 1971 to 1976.
+          The first Starbucks store was located in Seattle at 2000 Western Avenue from 1971–1976.
+          This cafe was later moved to 1912 Pike Place; never to be relocated again. During this time,
+          the company only sold roasted whole coffee beans and did not yet brew coffee to sell.
+          The only brewed coffee served in the store were free samples. During their first year
+          of operation, they purchased green coffee beans from Peet's, then began buying directly from growers.</p>
+      </div>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="Img/Old.jpg" alt="" class="img-fluid rounded mx-auto d-block">
+    </div>
+  </div>
+  <br>
+  <!--pricing-card-3-->
+  <div class="container marketing">
+    <!-- Three columns of text below the carousel -->
+    <div class="row ">
+      <div class="col-lg-4 rounded">
+        <div class="img">
+          <img src="Img/Co-.jpg" alt=""class="img-fluid rounded-5">
+          <h2 class="fw-normal">Espresso Frappuccino</h2>
+          <p>Coffee is combined with a shot of espresso and milk, then bl...</p>
+          <button type="button" class="btn btn-success mt-4 float-start">₹ 367.50</button>
+          <p><a class="btn btn-secondary" href="#">Add Item »</a></p><br>
+        </div><!-- /.col-lg-4 -->
+      </div>
+      <div class="col-lg-4">
+        <div class="img">
+          <img src="Img/Co-1.jpg" alt=""class="img-fluid rounded-5">
+          <h2 class="fw-normal">Iced Caffè Latte</h2>
+          <p>Our dark, Rich in flavour espresso is combined with milk and...</p>
+          <button type="button" class="btn btn-success mt-4 float-start">₹ 320.25</button>
+          <p><a class="btn btn-secondary" href="#">Add Item »</a></p><br>
+        </div><!-- /.col-lg-4 -->
+      </div>
+      <div class="col-lg-4">
+        <div class="img">
+          <img src="Img/Co-2.jpg" alt=""class="img-fluid rounded-5">
+          <h2 class="fw-normal">Iced Cappuccino</h2>
+          <p>Signature Italian style Cappuccino with espresso shot, steam...</p>
+          <button type="button" class="btn btn-success mt-4 float-start">₹ 315.00</button>
+          <p><a class="btn btn-secondary" href="#">Add Item »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    </div><!-- /.row -->
+    <br>
+    <!--pricing-card-4-->
+    <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <div class="row ">
+        <div class="col-lg-4">
+          <div class="img">
+            <img src="Img/Co-3.jpg" alt=""class="img-fluid rounded-5">
+            <h2 class="fw-normal">Iced Caffè Americano</h2>
+            <p>Espresso shots are topped with water to produce a light laye...</p>
+            <button type="button" class="btn btn-success mt-4 float-start">₹ 294.00</button>
+            <p><a class="btn btn-secondary" href="#">Add Item »</a></p><br>
+          </div><!-- /.col-lg-4 -->
+        </div>
+        <div class="col-lg-4">
+          <div class="img">
+            <img src="Img/Co-4.jpg" alt=""class="img-fluid rounded-5">
+            <h2 class="fw-normal">Roasted Nut and Chocolate Frappuccino</h2>
+            <p>Milk, coffee, chocolate chips and cashew nut sauce blended t...</p>
+            <button type="button" class="btn btn-success mt-4 float-start">₹ 483.00</button>
+            <p><a class="btn btn-secondary" href="#">Add Item »</a></p><br>
+          </div><!-- /.col-lg-4 -->
+        </div>
+        <div class="col-lg-4">
+          <div class="img">
+            <img src="Img/Co-5.jpg" alt=""class="img-fluid rounded-5">
+            <h2 class="fw-normal">Iced Caramel Hot Chocolate Delight</h2>
+            <p>ndulge your taste buds with our Iced Caramel Hot Chocolate...</p>
+            <button type="button" class="btn btn-success mt-4 float-start">₹ 456.75</button>
+            <p><a class="btn btn-secondary" href="#">Add Item »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div>
+      </div><!-- /.row -->
+      <br>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <!-- Social content -->
+  <div class="so">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+  <hr>
+  <br>
+  <!-- Footer content -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-1border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-5 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <a class="navbar-brand" href="#">
+        <img src="Img/Starbucks-logo-S.png" alt="Bootstrap" width="80" height="80">
+      </a>
+      <br>
+    </div>
+    <a class="navbar-brand" href="#">
+      <img src="Img/Gi.gif" alt="Bootstrap" width="150" height="140">
+    </a>
+    <div class="col-md-5 offset-md-1 mb-3">
+      <form>
+        <h5>Subscribe to our newsletter</h5>
+        <p>Monthly digest of what's new and exciting from us.</p>
+        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+          <label for="newsletter1" class="visually-hidden">Email address</label>
+          <input id="newsletter1" type="text" class="form-control" placeholder="Email address" fdprocessedid="qwxvf6">
+          <button class="btn btn-success" type="button" fdprocessedid="ktwpe">Subscribe</button>
+        </div>
+      </form>
+    </div>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top">
+      <p>Bomzi© 2023 Company, Inc. All rights reserved.</p>
+  </footer>
+  </div>
+  <hr>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

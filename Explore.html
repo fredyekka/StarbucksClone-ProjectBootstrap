@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explore</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <style>
+.so i {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background-color: green;
+      border-radius: 50%;
+      margin-right: 50px;
+      margin-left: 30px;
+      color: rgb(243, 243, 244);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: all 0.4s ease;
+    }
+
+    .so :hover {
+      margin-bottom: 20px;
+    }
+
+    .text {
+      justify-content: center;
+    }
+
+    .text-1 {
+      justify-content: center;
+    }
+  </style>
+
+    <!-- Navbar content -->
+  </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="Img/Starbucks-logo-S.png" alt="Bootstrap" width="40" height="35">
+          </a>
+        </div>
+      </nav>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Explore.html">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Order.html">Older</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Checkout.html">Pay</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Store
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">India</a></li>
+              <li><a class="dropdown-item" href="#">World wide</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+
+              <li><a class="dropdown-item" href="#">Launch new store in India</a></li>
+              <li><a class="dropdown-item" href="#">Launch new store world wide</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Looking for Something specific"
+            aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <!-- Button trigger modal -->
+      <div class="mx-2">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Contact Us
+        </button>
+      </div>
+      <!--Contact Us Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-2" id="exampleModalLabel">Contact Us</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container mt-2">
+                <form action="submit_feedback.php" method="post">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                      placeholder="name@example.com" name="email" required>
+                  </div>
+                  <label for="exampleFormControlSelect1">Select your Query</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Select</option>
+                    <option>Delivery Related</option>
+                    <option>Payment & Order Issues</option>
+                    <option>Franchise</option>
+                    <option>Others</option>
+                  </select>
+                  <div class="form-group">
+                    <label for="feedback">Your Concern</label>
+                    <textarea class="form-control" id="feedback" name="feedback" rows="4" required></textarea>
+                  </div>
+                  <br>
+                  <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Feedback
+      </button>
+      <!-- Feedback Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-4" id="staticBackdropLabel">Feedback</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="container mt-4">
+              <form action="submit_feedback.php" method="post">
+                <div class="form-group">
+                  <label for="name">Your Name:</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="feedback">How are you feeling about our brand?</label>
+                  <textarea class="form-control" id="feedback" name="feedback" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="feedback">Any further recommendations or feedback.</label>
+                  <textarea class="form-control" id="feedback" name="feedback" rows="4" required></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-success">Submit Feedback</button><br>
+              </form>
+            </div>
+  </nav>
+  <hr>
+  <!--Home-->
+  <div class="container my-1">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb p-2 bg-body-tertiary rounded-2">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Explore</a></li>
+      </ol>
+    </nav>
+  </div>
+  <!--Tittle Bar-->
+  <div class="bg-info clearfix">
+    <button type="button" class="btn btn-success mt-4 float-start">FEATURED</button>
+    <button type="button" class="btn btn-success float-end">THANK YOU</button>
+    <button type="button" class="btn btn-success float-start">ANYTIME</button>
+    <button type="button" class="btn btn-success mt-4 float-end">CONGRATULATIONS</button>
+  </div>
+  </div>
+  <!--Cards-1-->
+  <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">ANYTIME</h2>
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          style="background-image: url(https://images.unsplash.com/photo-1612846213933-916a1f56d859?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg4fHxpbmRpYW4lMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D);">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-normal"><b>India Exclusive..</b> <br>Bring in the festive season
+              and make each celebration memorable.</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="Img/LGO.png" alt="Bootstrap" width="50" height="50"
+                  class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#geo-fill"></use>
+                </svg>
+                <small>India</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#calendar3"></use>
+                </svg>
+                <small>3d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          style="background-image: url(https://images.unsplash.com/photo-1509785307050-d4066910ec1e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTE3fHxpbmRpYW4lMjBjb2ZmZWV8ZW58MHx8MHx8fDA%3D);">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-normal"><b>Starbucks Coffee..</b><br>Starbucks is best when
+              shared. Treat your pals to a good cup of coffee.</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="Img/LGO.png" alt="Bootstrap" width="50" height="50"
+                  class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#geo-fill"></use>
+                </svg>
+                <small>World_wide</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#calendar3"></use>
+                </svg>
+                <small>4d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+          style="background-image: url(https://images.unsplash.com/photo-1573068012813-e4c7558d8765?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fGNvZmZlZSUyMGdpZnR8ZW58MHx8MHx8fDA%3D);">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-normal"><b>U Keep Me Warm..</b><br>Captivating, cosy, coffee.
+              Gift your loved ones this Starbucks Gift Card.</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="Img/LGO.png" alt="Bootstrap" width="50" height="50"
+                  class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#geo-fill"></use>
+                </svg>
+                <small>World</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em">
+                  <use xlink:href="#calendar3"></use>
+                </svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Cards-2-->
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">CONGRATULATIONS</h2>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url(https://images.unsplash.com/photo-1531686264889-56fdcabd163f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29uZ3JhdHVsYXRpb258ZW58MHx8MHx8fDA%3D);">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-normal"><b>Congrats..</b> <br>Coffee. Cheer. Celebrate. Enjoy
+                each of your special moments with Starbucks..</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="Img/LGO.png" alt="Bootstrap" width="50" height="50"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Last updated </small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>3d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url(https://images.unsplash.com/photo-1485872299829-c673f5194813?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGNlbGVicmF0ZSF8ZW58MHx8MHx8fDA%3D);">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-7 lh-1 fw-normal"><b>Way To Go..</b><br>It's time to celebrate! Show
+                your appreciation with this Starbucks Gift Card.</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="Img/LGO.png" alt="Bootstrap" width="50" height="50"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Last updated </small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url(https://images.unsplash.com/photo-1560867615-41120b242193?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHN0YXJidWNrcyUyMGN1cHxlbnwwfHwwfHx8MA%3D%3D);">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-normal"><b>U Keep Me Warm..</b><br>Captivating, cosy, coffee.
+                Gift your loved ones this Starbucks Gift Card.</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="Img/LGO.png" alt="Bootstrap" width="50" height="50"
+                    class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Last updated </small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>5d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <hr>
+      
+    </div>
+  </div>
+  
+   <!-- Social content -->
+   <div class="so">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+</div>
+  </div>
+  <hr>
+  <br>
+  <!-- Footer content -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-1border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-5 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <a class="navbar-brand" href="#">
+        <img src="Img/Starbucks-logo-S.png" alt="Bootstrap" width="80" height="80">
+      </a>
+      <br>
+    </div>
+    <a class="navbar-brand" href="#">
+      <img src="Img/Gi.gif" alt="Bootstrap" width="150" height="140">
+    </a>
+    <div class="col-md-5 offset-md-1 mb-3">
+      <form>
+        <h5>Subscribe to our newsletter</h5>
+        <p>Monthly digest of what's new and exciting from us.</p>
+        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+          <label for="newsletter1" class="visually-hidden">Email address</label>
+          <input id="newsletter1" type="text" class="form-control" placeholder="Email address" fdprocessedid="qwxvf6">
+          <button class="btn btn-success" type="button" fdprocessedid="ktwpe">Subscribe</button>
+        </div>
+      </form>
+    </div>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top">
+      <p>Bomzi© 2023 Company, Inc. All rights reserved.</p>
+  </footer>
+  </div>
+  <hr>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
